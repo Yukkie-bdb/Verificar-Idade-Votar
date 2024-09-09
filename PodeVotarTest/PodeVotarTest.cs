@@ -35,7 +35,7 @@ namespace PodeVotarTest
             }
 
             [Fact]
-            public void TestPodeVotar_Idade18_PodeVotar()
+            public TestPodeVotar_Idade18_PodeVotar()
             {
                 // Arrange
                 int idade = 18;
