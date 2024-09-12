@@ -6,18 +6,18 @@ namespace PodeVotarTest
     {
         public class VotoTests
         {
-            [Fac]
+            [Fact]
             public void TestPodeVotar_Idade11_NaoPodeVotar()
             {
                 // Arrange
                 int idade = 11;
-                string esperado = "pode votar!";
+                string esperado = "Não pode votar!";
 
                 // Act
-                string obtido = Voto.podeVotar(esperado);
+                string obtido = Voto.podeVotar(idade);
 
                 // Assert
-                Assert.Equal(obtido);
+                Assert.Equal(esperado, obtido);
             }
 
             [Fact]
@@ -35,14 +35,14 @@ namespace PodeVotarTest
             }
 
             [Fact]
-            public TestPodeVotar_Idade18_PodeVotar()
+            public void TestPodeVotar_Idade18_PodeVotar()
             {
                 // Arrange
                 int idade = 18;
                 string esperado = "Pode votar!";
 
                 // Act
-                string obtido = Voto.podeVotar(obtido);
+                string obtido = Voto.podeVotar(idade);
 
                 // Assert
                 Assert.Equal(esperado, obtido);
@@ -52,7 +52,7 @@ namespace PodeVotarTest
             public void TestPodeVotar_Idade70_VotoOpcional()
             {
                 // Arrange
-                int idade = 69;
+                int idade = 70;
                 string esperado = "Voto opcional!";
 
                 // Act
@@ -70,7 +70,7 @@ namespace PodeVotarTest
                 string esperado = "Voto opcional!";
 
                 // Act
-                string obtido = Voto.podeVotar(obtido);
+                string obtido = Voto.podeVotar(idade);
 
                 // Assert
                 Assert.Equal(esperado, obtido);

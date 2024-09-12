@@ -13,14 +13,14 @@
         */
         public static string podeVotar(int idade)
         {
-            if (idade >= 15)
+            if ((idade >= 0) && (idade <= 15))
                 return "Não pode votar!";
 
-            if ((idade <= 16) && (idade <= 17))
+            if ((idade == 16) || (idade == 17) || (idade >= 70))
                 return "Voto opcional!";
 
             if ((idade >= 18) && (idade < 70))
-                return "Não Pode votar!";
+                return "Pode votar!";
 
             return "Voto opcional!";
         }
