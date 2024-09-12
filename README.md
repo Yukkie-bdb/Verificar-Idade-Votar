@@ -1,18 +1,19 @@
 # PodeVotar - Teste de Software com ASP.NET e xUnit
 
-Este projeto foi desenvolvido como parte de uma atividade prática focada em **testes de software** utilizando **ASP.NET** e **xUnit**. O objetivo é que os alunos identifiquem e corrijam **bugs** no código que contém funções para validar as faixas etárias em que o voto é:
+Este projeto foi desenvolvido como parte de uma atividade prática para testes de software, utilizando **ASP.NET** e **xUnit**. Durante o desenvolvimento, revisei e corrigi o código para validar corretamente as faixas etárias em que o voto é:
 
 - **Obrigatório**: Para cidadãos de 18 a 70 anos.
 - **Opcional**: Para cidadãos entre 16 e 17 anos, ou acima de 70 anos.
 - **Não pode Votar**: Para cidadãos abaixo de 16 anos.
 
-## Objetivo da Atividade
+## Objetivo do Projeto
 
-A atividade tem como objetivo reforçar o aprendizado em:
+O principal foco foi identificar e corrigir bugs no código, implementar testes unitários e utilizar o framework **xUnit** para validação. O trabalho envolveu:
 
-- Identificação e correção de bugs.
-- Implementação e validação de testes unitários.
-- Uso do framework de testes **xUnit**.
+- Revisar o código existente, compreendendo as regras de votação.
+- Identificar bugs nas funções de verificação de idade.
+- Garantir que os testes cobrissem corretamente todos os cenários.
+- Melhorar os testes e corrigir falhas onde necessário.
 
 Os alunos devem revisar o código, entender as regras de votação e corrigir eventuais problemas nos testes e nas funções associadas à verificação de idade.
 
@@ -43,18 +44,13 @@ Os alunos devem revisar o código, entender as regras de votação e corrigir ev
    dotnet test
    ```
 
-## Tarefa do Aluno
-
-- Identificar bugs nas funções de validação de idade.
-- Verificar se os testes estão cobrindo todos os cenários corretamente.
-- Corrigir os bugs e melhorar os testes, se necessário.
-- Enviar o repositório no GitHub.
-
 ## Exemplo de Cenários de Teste
 
 - **Voto obrigatório**: Cidadãos com idade entre 18 e 70 anos.
 - **Voto opcional**: Cidadãos de 16-17 anos ou acima de 70 anos.
 - **Não pode Votar**: Cidadãos com menos de 16 anos.
+
+Com as correções e ajustes feitos, submeti o código final ao GitHub.
 
 ## Licença
 
